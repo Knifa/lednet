@@ -1,10 +1,10 @@
-(footprint "LED_Wire_Connector"
+(footprint "INMP441_Breakout"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -2.5 0)
+		(at 5 -1.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "d18437a2-df73-4e04-be4d-2e274993c1e4")
@@ -15,8 +15,8 @@
 			)
 		)
 	)
-	(property "Value" "LED_Wire_Connector"
-		(at 0 4 0)
+	(property "Value" "INMP441_Breakout"
+		(at 5 3.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "d1c7536d-9ab3-455b-8955-5f1de524862c")
@@ -55,7 +55,7 @@
 	)
 	(attr smd)
 	(fp_text user "G"
-		(at -3 2.5 0)
+		(at 0 1.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "0fbfd63e-6aa2-48ed-98ef-4261e560cc3a")
@@ -66,8 +66,8 @@
 			)
 		)
 	)
-	(fp_text user "V"
-		(at 3 2.5 0)
+	(fp_text user "C"
+		(at 10 1.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "12b95a12-89cb-466f-82cd-947d1275f4dd")
@@ -78,8 +78,8 @@
 			)
 		)
 	)
-	(fp_text user "D"
-		(at 0 2.5 0)
+	(fp_text user "V"
+		(at 2 1.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "48bb3cf1-b21b-41f1-b2c9-0bc96aec2381")
@@ -90,8 +90,44 @@
 			)
 		)
 	)
+	(fp_text user "LR"
+		(at 6 1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4abbeedf-8001-496a-9028-2feddcb2be67")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "W"
+		(at 8 1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "91e5908a-62ed-46f3-82b7-7b1737233828")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "D"
+		(at 4 1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f6e1bcb5-eb80-4ad5-8fa0-e619f2c42932")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(fp_text user "${REFERENCE}"
-		(at 0 5.75 0)
+		(at 5 5.25 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "6ef71c93-6734-4438-84d7-e5412455bb3b")
@@ -103,28 +139,52 @@
 		)
 	)
 	(pad "1" thru_hole rect
-		(at -3 0)
-		(size 2 3)
-		(drill 1)
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "00f58ca4-df75-47ae-9354-d1362db7186e")
 	)
 	(pad "2" thru_hole rect
-		(at 0 0)
-		(size 2 3)
-		(drill 1)
+		(at 2 0)
+		(size 1.5 1.5)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "71275244-0e7d-43d5-aa1a-69741092fdc2")
+		(uuid "d7ac0a83-68f4-412e-8367-7bcf5a38aca2")
 	)
 	(pad "3" thru_hole rect
-		(at 3 0)
-		(size 2 3)
-		(drill 1)
+		(at 4 0)
+		(size 1.5 1.5)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "8c1f7fe0-8668-47b2-9fe8-60d2370c69d3")
+		(uuid "8ac80b22-4ae4-470b-83ac-eae56b166609")
+	)
+	(pad "4" thru_hole rect
+		(at 6 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8866612b-75bc-45b1-bb1b-6e18320951ac")
+	)
+	(pad "5" thru_hole rect
+		(at 8 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e5d0fdcc-9abf-44a0-842f-7856570de377")
+	)
+	(pad "6" thru_hole rect
+		(at 10 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "44028805-4054-4fdb-b8cc-8e9c5614dc2d")
 	)
 	(embedded_fonts no)
 )
